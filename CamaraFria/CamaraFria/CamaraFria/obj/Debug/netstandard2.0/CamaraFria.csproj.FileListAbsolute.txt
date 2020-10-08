@@ -1,0 +1,12 @@
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\CamaraFria.AssemblyInfoInputs.cache
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\CamaraFria.AssemblyInfo.cs
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\CamaraFria.csprojAssemblyReference.cache
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\bin\Debug\netstandard2.0\CamaraFria.deps.json
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\bin\Debug\netstandard2.0\CamaraFria.dll
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\bin\Debug\netstandard2.0\CamaraFria.pdb
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\CamaraFria.dll
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\CamaraFria.pdb
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\CamaraFria.csproj.CoreCompileInputs.cache
+C:\camara-fria\CamaraFria\CamaraFria\CamaraFria\obj\Debug\netstandard2.0\XamlC.stamp

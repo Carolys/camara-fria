@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CamaraFria.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid x:Name="bindableLayoutTemperature" RowDefinitions="100, *, *, *, 22" ColumnDefinitions="*, *" VerticalOptions="FillAndExpand" BackgroundColor="{Binding BackgroundColor}">
+            <Image x:Name="imgLamp" Source="{Binding Lampada}" Grid.ColumnSpan="2" HeightRequest="100" HorizontalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer BindingContext="{Binding Source={x:Reference bindableLayoutTemperature}, Path=BindingContext}"
+                                                CommandParameter="{Binding Source={x:Reference imgLamp}, Path=BindingContext}"
+                                                Command="{Binding ModifyDataCommand}">
+                    </TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="TEMPERATURA" Grid.Row="1" Grid.ColumnSpan="2" FontSize="14" TextColor="{Binding TxtColor}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Temperatura}" Grid.Row="2" Grid.ColumnSpan="2" FontSize="55" TextColor="{Binding TxtColor}" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="{Binding Led1}" Grid.Row="3" Grid.Column="0" HeightRequest="90" VerticalOptions="End"/>
+            <Image Source="{Binding Led2}" Grid.Row="3" Grid.Column="1" HeightRequest="90" VerticalOptions="End"/>
+            <Label Text="{Binding Camara.Led1}" Grid.Row="4" Grid.Column="0" FontSize="14" TextColor="{Binding TxtColor}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Camara.Led2}" Grid.Row="4" Grid.Column="1" FontSize="14" TextColor="{Binding TxtColor}" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
