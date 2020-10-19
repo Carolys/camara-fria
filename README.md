@@ -31,5 +31,5 @@ Esse projeto foi um trabalho desenvolvido durante a matéria de **[Tópicos Espe
 
 ---
 
-<p align="center">Desenvolvido com 💜 por Carolina Yasue, Matheus Stella e Camila Rody</p>
 <p align="center">Orientação do professor Leandro Vasconcelos</p>
+<p align="center">Desenvolvido com 💜 por Carolina Yasue, Matheus Stella e Camila Rody</p>
