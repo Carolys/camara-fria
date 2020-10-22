@@ -7,6 +7,7 @@
   <img alt="Dar theme home app" src="https://github.com/Carolys/camara-fria/blob/main/.github/iPhone-8-Plus-Dark.png" width="25%">
 </p>
 
+
 ## 📖 Sobre o projeto
 
 A CamaraFria tem o objetivo que auxiliar no manejamento de ambientes que precisam de um controle de temperatura, como câmaras frias de refrigeração de alimentos.
@@ -23,17 +24,20 @@ Esse projeto foi um trabalho desenvolvido durante a matéria de **[Tópicos Espe
 - [Node-RED](https://nodered.org)
 - [Arduino IDE](https://www.arduino.cc/en/Main/software)
 
+
 ## 🔌 Componentes eletrônicos
 
 - 1 Arduino
 - 3 Leds (1 vermelha, 1 verde, 1 amarela) 
 - 1 DHT11 (Sensor de temperatura e umidade)
 
+
 ## 🎯 Objetivo do projeto
 
 O objetivo do projeto é trazer dados via aplicação mobile de temperatura do freezer qual o usuário possa ter controle onde estiver. Seja para negócios ou residencial.
 
 A câmara fria tem como seu objetivo trazer acesso em tempo real via aplicativo a temperatura da mesma. Com uma UI(user interface) minimalista e resiliente, pode-se obter a temperatura de uma geladeira e ou freezer. Além disso, existe também uma interface física que pode alegar o estado da temperatura visualmente.
+
 
 ## ⚙️ Funcionamento
 
@@ -43,11 +47,13 @@ Quando a temperatura sobe, é acionado o led vermelho, demonstrando que a temper
 
 Já o sensor de temperatura, deve estar sempre em contato com a câmara fria pois é por meio deste que irá detectar a temperatura e levar os dados ao hardware (microcontrolador). Através da programação do mesmo, ocorre o tratamento desses dados a fim de satisfazer a aplicação mobile, levando todas as informações necessárias como, qual led ligou, qual temperatura está, se está adequado ou não, se está frio ou quente.
 
+
 ## 🛠️ Modo de operação
 
 Para que aconteça essa detecção de temperatura e toda a proposta previamente abordada, é usado um microcontrolador, no caso deste projeto, o Arduino Uno que, irá receber todos os dados detectados por periféricos a ele conectados e enviar os dados via porta serial para o node-red realizar a análise dos mesmos. Os periféricos anteriormente citados, seriam componentes como sensor de temperatura, responsável por detectar a temperatura da câmara e, leds, responsáveis por trazer a informação visual a quem usa.
 
 Ainda que se chame câmara fria, o medidor de temperatura além de pegar temperaturas mínimas, também pega as máximas. E com o envio desses dados ao microcontrolador Arduino Uno, é possível trabalhar através do software NodeRed toda a obtenção dessa informação e também manipulação da mesma através da criação de dashboards que serão integradas ao aplicativo em questão. Com o auxílio de leds, é possível obter visão sobre o estado da temperatura (quente ou frio) e, também para iluminar o interior da câmara, facilitando seu uso. 
+
 
 ## 💻 Programação
 
@@ -64,12 +70,13 @@ Na imagem abaixo, é possível ver os atributos com seus respectivos valores sin
 Em seguida, é possível visualizar os gráficos e valores obtidos por meio da integração, nas imagens abaixo do resultado dos formulários e planilha.
 
 <h1 align="center">
-    <img alt="Forms do Google" title="FormularioGoogle" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/forms-google.PNG" width=40% height=40%/>
+    <img alt="Forms do Google" title="FormularioGoogle" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/forms-google.PNG" width=60% height=40%/>
 </h1>
 
 Foi desenvolvido um app mobile com Xamarin para o monitoramento dos dados do ambiente  de escolha do usuário conforme citado anteriormente. Esses dados são capturados em tempo real da ferramenta Firebase, assim é possível ter controle sobre os dados de temperatura, e se esse valor superou o valor máximo que o ambiente deve ter ou não. Também, é possível acionar e desligar a luz do local ao clicar no ícone de lamparina na parte superior da interface.
 
 Os dados foram capturados em formato json e convertidos para serem apresentados na tela, assim como na requisição para alterar o valor de acionamento e o desligamento da lâmpada do ambiente em questão.
+
 
 ## 📝 Esquemático de montagem
 
@@ -84,6 +91,7 @@ Para ligar os leds, expande-se a conexão do GND por  jumpers conectado à resis
     <img alt="Circuito" title="Circuito" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/circuit.PNG" width=80% height=40%/>
 </h1>
 
+
 ## ☋ Flow Node-Red
 
 <h1 align="center">
@@ -91,11 +99,13 @@ Para ligar os leds, expande-se a conexão do GND por  jumpers conectado à resis
     <img alt="Flow parte 2" title="FlowParte2" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/node-red-flow-2.PNG" width=50% height=40%/>
 </h1>
 
+
 ## ✨ Dashboard do Node-Red
 
 <h1 align="center">
     <img alt="Dashboard Node-Red" title="DashboardNodeRed" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/dashboard-node-red.PNG" width=20% height=40%/>
 </h1>
+
 
 ## 📧 E-mail com dados disparados pelo Node-Red
 
@@ -103,17 +113,20 @@ Para ligar os leds, expande-se a conexão do GND por  jumpers conectado à resis
     <img alt="Email status" title="EmailStatus" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/email-status.png" width=40% height=40%/>
 </h1>
 
+
 ## 🖥 Code utilizado no Arduino IDE
 
 <h1 align="center">
     <img alt="Arduino IDE Code" title="ArduinoIDECode" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/arduino-ide.PNG" width=40% height=40%/>
 </h1>
 
+
 ## 🔌 Split da porta serial
 
 <h1 align="center">
     <img alt="Split Porta Serial" title="SplitPortaSerial" src="https://github.com/Carolys/camara-fria/blob/main/arduinoide-and-nodered-archives/split.PNG" width=60% height=60%/>
 </h1>
+
 
 ## 📷 Foto do circuito
 
